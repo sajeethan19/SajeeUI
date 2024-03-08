@@ -1,10 +1,15 @@
 import React from 'react';
 import "./Button.css"
 
-function Button() {
+export interface BtnProps{
+  label:string
+}
+
+function Button(props:BtnProps) {
+
   return (
     <div>
-        <button className='SajeeBtn glass-blue'>SajeeBtn</button>
+        <button className='SajeeBtn glass-blue'>{props.label}</button>
     </div>
   )
 }
